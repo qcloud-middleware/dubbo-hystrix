@@ -1,0 +1,1 @@
+hystrix=com.tencent.tsf.dubbo.hystrix.support.impl.HystrixCircuitBreakerFactory

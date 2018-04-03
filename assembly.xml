@@ -1,0 +1,24 @@
+<assembly>
+	<id>bin</id>
+	<formats>
+		<!-- zip,tar,tar.gz,tar.bz2,jar,dir,war -->
+		<format>zip</format>
+	</formats>
+	<dependencySets>
+		<dependencySet>
+			<useProjectAttachments>true</useProjectAttachments>
+			<outputDirectory>lib</outputDirectory>
+		</dependencySet>
+	</dependencySets>
+	<!-- 需要打包的文件集 -->
+	<fileSets>
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>conf</outputDirectory>
+        </fileSet>
+		<fileSet>
+			<directory>${project.basedir}/lib</directory>
+			<outputDirectory>lib</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>
